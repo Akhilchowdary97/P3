@@ -24,7 +24,7 @@ def ac(request,c,d):
     elif int(d) > int(c):
         greatest = " d Value  is Greatest", d
     else:
-        greatest = " Two Values are equal numbers",c,d
+        greatest = " Two Values are equal ",c,d
     context = {"greatest":greatest}
     return render(request,"directory/greatest.html",context)
 def ad(request,e,f,g):
